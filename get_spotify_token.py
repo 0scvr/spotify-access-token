@@ -4,7 +4,7 @@ import base64
 import secrets
 import urllib.parse
 import requests
-import pyperclip
+import copykitten
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 # Configuration
@@ -71,7 +71,7 @@ def get_access_token(client_id, client_secret, scope):
     
     print(f"[*] Open browser and navigate to this URL to authorize...")
     print(f"    URL: {auth_url}")
-    pyperclip.copy(auth_url)
+    copykitten.copy(auth_url)
     print(f"[-] Authorization URL copied to clipboard.")
 
     # 4. Wait for Callback (handle_request handles a single request then returns)
@@ -116,7 +116,7 @@ def get_access_token(client_id, client_secret, scope):
             print(f"Refresh Token (Keep this safe!):\n{token_info['refresh_token']}\n")
         print(f"Expires in: {token_info['expires_in']} seconds")
         print("="*60)
-        pyperclip.copy(token_info['access_token'])
+        copykitten.copy(token_info['access_token'])
         print(f"[-] Access token copied to clipboard.")
     else:
         print(f"\n[!] Error fetching token: {response.status_code}")
