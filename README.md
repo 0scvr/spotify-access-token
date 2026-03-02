@@ -50,11 +50,13 @@ options:
 #### Example usage
 
 ```sh
+# Requests theses scopes by default: 'user-read-private user-follow-read user-library-read playlist-read-private playlist-read-collaborative'
 pipenv run python get_spotify_token.py --client_id ID --client_secret SECRET
 ```
 
 ```sh
-pipenv run python get_spotify_token.py --client_id ID --client_secret SECRET --scope "user-read-private user-library-read"
+# Requesting specific scopes
+pipenv run python get_spotify_token.py --client_id ID --client_secret SECRET --scope "playlist-modify-public playlist-modify-private user-library-modify"
 ```
 
 #### Scopes
