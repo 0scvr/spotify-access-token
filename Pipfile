@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests = "*"
-copykitten = "*"
+requests = "~=2.32"
+copykitten = "~=2.0"
 
 [dev-packages]
 
