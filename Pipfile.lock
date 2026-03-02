@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9610768180fe6abea3cf18164ec20dfa8d2fb4efcd0aed74578c94ec2b0d5660"
+            "sha256": "d0301800d0ee069789b79c321e70229d37d520b969779cbcc05f796fa0592047"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -143,6 +143,19 @@
             "markers": "python_version >= '3.7'",
             "version": "==3.4.4"
         },
+        "copykitten": {
+            "hashes": [
+                "sha256:00d09e79fe8031dbdfaefd843d60e48f2b63e6ea9a823d25e07a17469f25017e",
+                "sha256:191c202d19962fa5dbed5296d83bfa844b36609e30f0fb19cf1706b136f170e8",
+                "sha256:1fb3118f5b3d9bc70442ae62f5d0b5fdd22243f2b4f2811e0680cbb4dfca112a",
+                "sha256:65b799e46da487e3380248065e5684d39e9f8f0f53b1124edba5e4fd2dc5a273",
+                "sha256:6be53c8c45bb85bda1679ea2d890e24303096d2a9d9a1022e159b7cfd350b2c0",
+                "sha256:bda13d614ffb38147d4fce5217d4f2397967514f5ea09fb8d5c5cf5d16028e58"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==2.0.0"
+        },
         "idna": {
             "hashes": [
                 "sha256:771a87f49d9defaf64091e6e6fe9c18d4833f140bd19464795bc32d966ca37ea",
@@ -150,14 +163,6 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==3.11"
-        },
-        "pyperclip": {
-            "hashes": [
-                "sha256:244035963e4428530d9e3a6101a1ef97209c6825edab1567beac148ccc1db1b6",
-                "sha256:299403e9ff44581cb9ba2ffeed69c7aa96a008622ad0c46cb575ca75b5b84273"
-            ],
-            "index": "pypi",
-            "version": "==1.11.0"
         },
         "requests": {
             "hashes": [

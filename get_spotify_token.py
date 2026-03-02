@@ -69,7 +69,7 @@ def get_access_token(client_id, client_secret, scope):
     }
     auth_url = f"{SPOTIFY_AUTH_URL}?{urllib.parse.urlencode(params)}"
     
-    print(f"[*] Open browser and navigate to this URL to authorize...")
+    print(f"[*] Opening browser to authorize...")
     print(f"    URL: {auth_url}")
     copykitten.copy(auth_url)
     print(f"[-] Authorization URL copied to clipboard.")
@@ -126,7 +126,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Get Spotify Access Token via PKCE')
     parser.add_argument('--client_id', required=True, help='Spotify Client ID')
     parser.add_argument('--client_secret', required=False, default='', help='Spotify Client Secret')
-    parser.add_argument('--scope', default='user-read-private user-library-read playlist-read-private playlist-read-collaborative', help='Space separated scopes')
+    parser.add_argument('--scope', default='user-read-private user-follow-read user-library-read playlist-read-private playlist-read-collaborative', help='Space separated scopes')
     
     args = parser.parse_args()
     
